@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="Titel">Please write the numbers in English</string>
+    <string name="TitelHint">Enter amount</string>
+    <string name="Continue">Continue Developer</string>
+    <string name="todo1">TODO</string>
+    <string name="todo">TODOa</string>
+</resources>

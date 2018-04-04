@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="Titel">يرجى كتابة الارقام باللغة الانجليزية</string>
+    <string name="TitelHint"> المبلغ</string>
+    <string name="todo">TODOA</string>
+    <string name="Continue">تواصل مع المبرمج</string>
+    <string name="todo1">TODO</string>
+</resources>
