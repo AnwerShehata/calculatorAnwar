@@ -38,12 +38,17 @@ public class MainActivity extends AppCompatActivity {
         addition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
                 String nuA = number1.getText().toString();
                 String nuB = number2.getText().toString();
                 String nuC = String.valueOf(Double.parseDouble(nuA)* Double.parseDouble(nuB));
                 String nuD = String.valueOf(Double.parseDouble(nuC) / (100));
                 String nuF = String.valueOf(Double.parseDouble(nuD) + Double.parseDouble(nuA));
                 result.setText(nuF);
+                }catch (Exception e){
+                    String Error = "القيمة التي ادخلتها غير صحيحة";
+                    result.setText(Error);
+                }
             }
         });
 
@@ -52,12 +57,17 @@ public class MainActivity extends AppCompatActivity {
         subtraction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nuA = number1.getText().toString();
-                String nuB = number2.getText().toString();
-                String nuC = String.valueOf(Double.parseDouble(nuA)* Double.parseDouble(nuB));
-                String nuD = String.valueOf(Double.parseDouble(nuC) / (100));
-                String nuF = String.valueOf(Double.parseDouble(nuD) - Double.parseDouble(nuA));
-                result.setText(nuF);
+                try {
+                    String nuA = number1.getText().toString();
+                    String nuB = number2.getText().toString();
+                    String nuC = String.valueOf(Double.parseDouble(nuA) * Double.parseDouble(nuB));
+                    String nuD = String.valueOf(Double.parseDouble(nuC) / (100));
+                    String nuF = String.valueOf(Double.parseDouble(nuD) - Double.parseDouble(nuA));
+                    result.setText(nuF);
+                }catch (Exception e){
+                    String Error = "القيمة التي ادخلتها غير صحيحة";
+                    result.setText(Error);
+                }
             }
         });
 
@@ -66,12 +76,17 @@ public class MainActivity extends AppCompatActivity {
         divide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nuA = number1.getText().toString();
-                String nuB = number2.getText().toString();
-                String nuC = String.valueOf(Double.parseDouble(nuA)* Double.parseDouble(nuB));
-                String nuD = String.valueOf(Double.parseDouble(nuC) / (100));
-                String nuF = String.valueOf(Double.parseDouble(nuD) % Double.parseDouble(nuA));
-                result.setText(nuF);
+                try {
+                    String nuA = number1.getText().toString();
+                    String nuB = number2.getText().toString();
+                    String nuC = String.valueOf(Double.parseDouble(nuA) * Double.parseDouble(nuB));
+                    String nuD = String.valueOf(Double.parseDouble(nuC) / (100));
+                    String nuF = String.valueOf(Double.parseDouble(nuD) % Double.parseDouble(nuA));
+                    result.setText(nuF);
+                }catch (Exception e){
+                    String Error = "القيمة التي ادخلتها غير صحيحة";
+                    result.setText(Error);
+                }
             }
         });
 
@@ -114,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent_shareText = new Intent(Intent.ACTION_SEND);
-                intent_shareText.putExtra(Intent.EXTRA_TEXT,"لتحميل التطبيق اضغط علي الرابط هنا..https://www.youtube.com/watch?v=VGMiGm0WzGI");
+                intent_shareText.putExtra(Intent.EXTRA_TEXT,"لتحميل التطبيق اضغط علي الرابط هنا..https://drive.google.com/file/d/1RR6MNLyoiyRy-F98degVFHNILuHw5ZVn/view?usp=sharing");
                 intent_shareText.setType("text/plain");
                 startActivity(Intent.createChooser(intent_shareText,""));
 
