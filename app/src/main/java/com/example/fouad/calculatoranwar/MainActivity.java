@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 String nuF = String.valueOf(Double.parseDouble(nuD) + Double.parseDouble(nuA));
                 result.setText(nuF);
                 }catch (Exception e){
-                    String Error = "القيمة التي ادخلتها غير صحيحة";
-                    result.setText(Error);
+                   /* String Error = "القيمة التي ادخلتها غير صحيحة";
+                    result.setText(Error);*/
                 }
             }
         });
@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     String nuF = String.valueOf(Double.parseDouble(nuD) - Double.parseDouble(nuA));
                     result.setText(nuF);
                 }catch (Exception e){
-                    String Error = "القيمة التي ادخلتها غير صحيحة";
-                    result.setText(Error);
+                   /* String Error = "القيمة التي ادخلتها غير صحيحة";
+                    result.setText(Error);*/
                 }
             }
         });
@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
                     String nuF = String.valueOf(Double.parseDouble(nuD) % Double.parseDouble(nuA));
                     result.setText(nuF);
                 }catch (Exception e){
-                    String Error = "القيمة التي ادخلتها غير صحيحة";
-                    result.setText(Error);
+                    /*String Error = "القيمة التي ادخلتها غير صحيحة";
+                    result.setText(Error);*/
                 }
             }
         });
