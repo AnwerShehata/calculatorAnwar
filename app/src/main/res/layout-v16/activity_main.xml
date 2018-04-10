@@ -122,8 +122,8 @@
 
     />
     <ImageView
-            android:layout_width="300"
-            android:layout_height="150" app:srcCompat="@drawable/imaghome"
+            android:layout_width="300dp"
+            android:layout_height="150dp" app:srcCompat="@drawable/imaghome"
             android:id="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
